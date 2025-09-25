@@ -1,0 +1,60 @@
+/* Root variables for colors and font size */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+  --font-size: 15px;
+}
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--slate-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Responsive width */
+  max-width: 320px;
+  text-align: center;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--slate-900);
+  margin: 20px 0 10px;
+}
+
+.card p {
+  color: var(--slate-500);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 265px;
+  margin: 0px 10px 20px 10px;
+  opacity: 0.9;
+}
